@@ -34,13 +34,8 @@ public class Employee {
 		this.id=id;
 		this.name=name;
 		this.salary=salary;
-  
-//		System.out.println(id +" " + name + " " + salary);
-
 	}
-	
-	public static void main(String args[]) {
-		
+	public static void main(String args[]) {	
 		Employee obj1= new Employee();
 		obj1.displayDetails(1, "Pavan", 100000);
 		Employee obj2= new Employee();
@@ -51,26 +46,25 @@ public class Employee {
 		obj4.displayDetails(4, "Naruto", 400000);
 		Employee obj5= new Employee();
 		obj5.displayDetails(5, "Hinata", 500000);
-		
-		
 		ArrayList<Employee> list= new ArrayList<>(); 
 		list.add(obj1);
 		list.add(obj2);
 		list.add(obj3);
 		list.add(obj4);
 		list.add(obj5);
-//		System.out.println(list.size());
-
 		for(int i=0;i<list.size();i++) {
-			
-			System.out.println(list.get(i).id + " " + list.get(i).name + " " + list.get(i).salary);
-			
+				System.out.println(list.get(i).id + " " + list.get(i).name + " " + list.get(i).salary);	
 		}
-		
-		
-		
+			
 	}
 
 }
+
+output=>
+1 Pavan 100000
+2 Kumar 200000
+3 Rao 300000
+4 Naruto 400000
+5 Hinata 500000
 
 
